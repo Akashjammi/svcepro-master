@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0a0a0a</color>
+    <color name="colorPrimaryDark">#0a0a0a</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="black">#0a0a0a</color>
+    <color name="orange">#0a0a0a</color>
+    <color name="white">#ffffff</color>
+    <color name="buttonlight">#53ffffff</color>
+    <color name="newc">#0a0a0a</color>
+    <color name="frage">#d1d2d3</color>
+    <color name="bgcol">#f9f9f9</color>
+    <color name="dev">#0aaaff</color>
+    <color name="bg_screen1">#f9a928</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+    <color name="colorFAB1">#2196F3</color>
+    <color name="colorFAB2">#E040FB</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#ffffff</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+    <color name="sinch_purple">#ff63029d</color>
+    <color name="off_white">#fffafafa</color>
+    <color name="dark_gray">#ffb3b3b3</color>
+    <color name="very_dark_gray">#636363</color>
+
+    <color name="background">#e9e3dd</color>
+    <color name="testcol">#000000</color>
+    <color name="tback">#6e0a0a0a</color>
+    <color name="fulltrans">#00ffffff</color>
+    <color name="darkbggrey">#ededed</color>
+    <color name="clickclr">#067cf1</color>
+    <color name="deptbg">#ffad28</color>
+    <color name="buttoncol">#f7c029</color>
+    <color name="phototrans">#6d000000</color>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

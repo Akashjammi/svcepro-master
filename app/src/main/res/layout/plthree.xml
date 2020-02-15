@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/booksrecy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView29" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/prob"
+                android:layout_marginTop="10dp"
+                android:background="@color/buttoncol"
+                android:padding="5dp"
+                android:text="Books"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/downtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rdm2"
+                android:layout_marginLeft="10dp"
+                android:text="Download Standard Template for your résumé"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/prob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView8"
+                android:layout_centerHorizontal="true"
+                android:background="@color/blue"
+                android:text="Proceed"
+                android:textColor="@color/aidialog_background" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:text="@string/interques"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/downtxt"
+                android:layout_marginTop="10dp"
+                android:background="@color/buttoncol"
+                android:padding="5dp"
+                android:text="Interview Questions"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/resumerecy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView34"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/booksrecy"
+                android:layout_marginTop="10dp"
+                android:background="@color/buttoncol"
+                android:padding="5dp"
+                android:text="Popular résumé formats"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/buttoncol"
+                android:padding="3dp"
+                android:text="Placement preparation"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <at.blogc.android.views.ExpandableTextView
+                android:id="@+id/expandableTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView28"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:padding="5dp"
+                android:text="@string/plexp"
+                android:textSize="15sp"
+                app:animation_duration="750" />
+
+            <TextView
+                android:id="@+id/rdm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/expandableTextView"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:text="Read more"
+                android:textColor="@color/blue"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rdm"
+                android:layout_marginTop="10dp"
+                android:background="@color/buttoncol"
+                android:padding="5dp"
+                android:text="Writing a résumé"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <at.blogc.android.views.ExpandableTextView
+                android:id="@+id/expandableTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView33"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:padding="5dp"
+                android:text="@string/resume"
+                app:animation_duration="750" />
+
+            <TextView
+                android:id="@+id/rdm2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rdm"
+                android:layout_alignStart="@+id/rdm"
+                android:layout_below="@+id/expandableTextView2"
+                android:layout_marginTop="7dp"
+                android:text="Read more"
+                android:textColor="@color/blue"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

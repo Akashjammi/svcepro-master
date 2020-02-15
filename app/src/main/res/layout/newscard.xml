@@ -1,0 +1,105 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewnews"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@color/bgcol">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgcol"
+        android:paddingTop="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/newslay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="false"
+                android:layout_below="@+id/newstitle"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/clicktxt"
+                app:srcCompat="@drawable/ic_action_local_library" />
+
+            <TextView
+                android:id="@+id/clicktxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/newstitle"
+                android:layout_marginRight="6dp"
+                android:clickable="true"
+                android:text="Long press to view in website"
+                android:textColor="@color/clickclr"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/clicktxt"
+                android:layout_below="@+id/clicktxt"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="3dp"
+                android:text="Tap to expand"
+                android:textColor="#f49804" />
+
+            <TextView
+                android:id="@+id/newstitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_toEndOf="@+id/imageView5"
+                android:padding="5dp"
+                android:text="Loading..."
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/newsimg"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/newssubtitle"
+            android:layout_marginTop="5dp"
+            android:foregroundGravity="center"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/svce" />
+
+        <TextView
+            android:id="@+id/newssubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newslay"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="3dp"
+            android:text="Loading..."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/downloadimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/newsimg"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/ic_file_download" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

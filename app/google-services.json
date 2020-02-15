@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "331945373832",
+    "firebase_url": "https://svce-pro-26e5f.firebaseio.com",
+    "project_id": "svce-pro-26e5f",
+    "storage_bucket": "svce-pro-26e5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331945373832:android:c913177cdd24ea2b",
+        "android_client_info": {
+          "package_name": "com.svce.svcepro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "331945373832-ketogq77pdakvlntdqfdf07pcrsfmq9j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.svce.svcepro",
+            "certificate_hash": "cde199dee4ecb07adc0c593ffda3fd4faaf05dd4"
+          }
+        },
+        {
+          "client_id": "331945373832-pt5t90bth3p7b2a02be5muf0j1nqhqnf.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "331945373832-u09vmgbsc47l50sk49hmfl01lq1itt8t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.svce.svcepro",
+            "certificate_hash": "3daf902e4b771ff88b297ee8fa7c5a7ecfd582c4"
+          }
+        },
+        {
+          "client_id": "331945373832-290pr6ldcljaqb57tg9rc8et089f4vjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0yjg1ptmLzZaavsRtc2_S8_EgGv4M3rA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "331945373832-pt5t90bth3p7b2a02be5muf0j1nqhqnf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

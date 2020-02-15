@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/searchcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerviewimg">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ff4757">
+
+                    <TextView
+                        android:id="@+id/exploretxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="#ff4757"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="Explore"
+                        android:textColor="@color/white"
+                        android:textColorHighlight="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/optioncard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <HorizontalScrollView
+                    android:id="@+id/myscroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/quick"
+                    android:background="@color/black"
+                    android:scrollbars="none">
+
+                    <RelativeLayout
+                        android:id="@+id/reloptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView2"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:weightSum="5">
+
+                        <ImageView
+                            android:id="@+id/busbutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/mybutton"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:src="@drawable/bus"
+                            android:text="Bus Schedule"
+                            android:textColor="@color/cardview_light_background" />
+
+                        <ImageView
+                            android:id="@+id/clubsbutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/busbutton"
+                            android:layout_weight="1"
+                            android:background="@drawable/mybutton"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:src="@drawable/club"
+                            android:text="Clubs"
+                            android:textColor="@color/cardview_light_background" />
+
+                        <ImageView
+                            android:id="@+id/abtsvcebutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/clubsbutton"
+                            android:layout_weight="1"
+                            android:background="@drawable/mybutton"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:src="@drawable/clg"
+                            android:text="About SVCE"
+                            android:textColor="@color/cardview_light_background" />
+
+                        <ImageView
+                            android:id="@+id/webbutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/abtsvcebutton"
+                            android:layout_weight="1"
+                            android:background="@drawable/mybutton"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:src="@drawable/web"
+                            android:text="Website"
+                            android:textColor="@color/cardview_light_background" />
+
+                        <ImageView
+                            android:id="@+id/resbutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/webbutton"
+                            android:layout_weight="1"
+                            android:background="@drawable/mybutton"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:src="@drawable/result"
+                            android:text="Results"
+                            android:textColor="@color/cardview_light_background" />
+                    </RelativeLayout>
+                </HorizontalScrollView>
+            </android.support.v7.widget.CardView>
+
+            <HorizontalScrollView
+                android:id="@+id/iscroll"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/optioncard"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ff4757"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="94 \n Acre Campus"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text=" 50k+ \n PassOuts"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text=" 1000 + \n Collaborations"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text=" 5k + \n Students"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text=" 300 + \n Faculties"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/searchimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="820dp" />
+
+            <TextView
+                android:id="@+id/gallerytxt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/iscroll"
+                android:layout_marginLeft="2dp"
+                android:gravity="center_vertical"
+                android:text="\t Gallery"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerviewimg"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/gallerytxt"
+                android:divider="@null"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                app:reverseLayout="true" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerviewcat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/searchcard"
+                android:layout_weight="0.2"
+                android:divider="@null"
+                android:orientation="vertical"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                app:reverseLayout="true" />
+
+            <TextView
+                android:id="@+id/reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerviewcat"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Reviews are loading..."
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

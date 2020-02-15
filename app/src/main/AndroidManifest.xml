@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="svce.svcepro">
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="com.svce.svcepro.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.sampleapp.permission.C2D_MESSAGE" />
+    <!-- This app has permission to register and receive dataf message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_svce"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Displaycred" />
+        <activity android:name=".navandtab">
+            <intent-filter>
+                <action android:name="com.svce.svcepro.MESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".Login" />
+        <activity android:name=".bout" />
+        <activity android:name=".selectme" />
+        <activity android:name=".fautoone" />
+        <activity android:name=".fautotwo" />
+        <activity android:name=".fbiotechone" />
+        <activity android:name=".fbiotechtwo" />
+        <activity android:name=".fchemaone" />
+        <activity android:name=".fchembone" />
+        <activity android:name=".fchematwo" />
+        <activity android:name=".fchembtwo" />
+        <activity android:name=".fcseaone" />
+        <activity android:name=".fcseatwo" />
+        <activity android:name=".fcsebone" />
+        <activity android:name=".fcsebtwo" />
+        <activity android:name=".fcsecone" />
+        <activity android:name=".fcsectwo" />
+        <activity android:name=".fcivilone" />
+        <activity android:name=".fciviltwo" />
+        <activity android:name=".feeeaone" />
+        <activity android:name=".feeeatwo" />
+        <activity android:name=".feeebone" />
+        <activity android:name=".feeebtwo" />
+        <activity android:name=".feceaone" />
+        <activity android:name=".feceatwo" />
+        <activity android:name=".fecebone" />
+        <activity android:name=".fecebtwo" />
+        <activity android:name=".fececone" />
+        <activity android:name=".fecectwo" />
+        <activity android:name=".fitaone" />
+        <activity android:name=".fitatwo" />
+        <activity android:name=".fitbone" />
+        <activity android:name=".fitbtwo" />
+        <activity android:name=".fmechaone" />
+        <activity android:name=".Placements" />
+        <activity android:name=".fmechatwo" />
+        <activity android:name=".fmechbone" />
+        <activity android:name=".Newsactivity" />
+        <activity android:name=".fmechbtwo" />
+        <activity android:name=".wfautoone" />
+        <activity android:name=".wfautotwo" />
+        <activity android:name=".wfbiotechone" />
+        <activity android:name=".wfbiotechtwo" />
+        <activity android:name=".wfchemaone" />
+        <activity android:name=".wfchembone" />
+        <activity android:name=".wfchematwo" />
+        <activity android:name=".wfchembtwo" />
+        <activity android:name=".wfcseaone" />
+        <activity android:name=".wfcseatwo" />
+        <activity android:name=".wfcsebone" />
+        <activity android:name=".wfcsebtwo" />
+        <activity android:name=".wfcsecone" />
+        <activity android:name=".wfcsectwo" />
+        <activity android:name=".wfcivilone" />
+        <activity android:name=".wfciviltwo" />
+        <activity android:name=".wfeeeaone" />
+        <activity android:name=".wfeeeatwo" />
+        <activity android:name=".wfeeebone" />
+        <activity android:name=".Chat" />
+        <activity android:name=".wfeeebtwo" />
+        <activity android:name=".wfeceaone" />
+        <activity android:name=".wfeceatwo" />
+        <activity android:name=".wfecebone" />
+        <activity android:name=".wfecebtwo" />
+        <activity android:name=".wfececone" />
+        <activity android:name=".wfecectwo" />
+        <activity android:name=".wfitaone" />
+        <activity android:name=".wfitatwo" />
+        <activity android:name=".wfitbone" />
+        <activity android:name=".wfitbtwo" />
+        <activity android:name=".wfmechaone" />
+        <activity android:name=".wfmechatwo" />
+        <activity android:name=".wfmechbone" />
+        <activity android:name=".wfmechbtwo" />
+        <activity android:name=".aboutcollege" />
+        <activity android:name=".opennotif" />
+        <activity android:name=".webloader" />
+        <activity android:name=".teacherlist" />
+        <activity android:name=".userins" />
+        <activity android:name=".ttday" />
+        <activity android:name=".ttperiod" />
+        <activity android:name=".facultyadv" />
+        <activity android:name=".officeb" />
+        <activity android:name=".clgmap" />
+        <activity
+            android:name=".studentasso"
+            android:exported="true" />
+        <activity android:name=".Maincant" />
+        <activity android:name=".nyear" />
+        <activity android:name=".busactivity" />
+        <activity android:name=".fmarineone" />
+        <activity android:name=".fmarinetwo" />
+        <activity android:name=".clubspie" />
+        <activity android:name=".newsitemreader" />
+        <activity android:name=".interques" />
+
+        <receiver
+            android:name="com.pushbots.google.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.svce.svcepro" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".customHandler" />
+
+        <service android:name="com.pushbots.push.GCMIntentService" />
+
+        <activity android:name=".Recycler" />
+        <activity
+            android:name=".bustab"
+            android:label="@string/title_activity_bustab" />
+        <activity android:name=".rsemester" />
+        <activity android:name=".rdepartment" />
+        <activity android:name=".rsection" />
+        <activity android:name=".userrate" />
+        <activity android:name=".busroutes" />
+        <activity android:name=".ntestclass" />
+        <activity android:name=".bottomact" />
+        <activity android:name=".bedev" />
+        <activity android:name=".foodcourt" />
+        <activity android:name=".ccd" />
+        <activity android:name=".maincantlist" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".interquesexp" />
+        <activity
+            android:name=".bottomtest"
+            android:label="@string/title_activity_bottomtest" />
+        <activity
+            android:name=".photoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_photo"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".photosActivity"></activity>
+    </application>
+
+</manifest>

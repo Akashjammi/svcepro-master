@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkbggrey"
+    android:elevation="8dp"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/viewpager"
+        android:layout_alignEnd="@+id/viewpager"
+        android:layout_alignParentRight="false"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:clickable="false"
+        android:scaleType="center"
+        app:backgroundTint="#00ffffff"
+        app:elevation="17dp"
+        app:fabSize="normal"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_write_to_us" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/dot_dark_screen3"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/bgcol"
+        app:tabTextColor="@color/white"></android.support.design.widget.TabLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:visibility="gone"
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tabs"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:clickable="true"
+        android:scaleType="center"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/init" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fab"
+        android:background="@color/fulltrans">
+
+    </android.support.v4.view.ViewPager>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/displaytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/fab"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="9dp"
+        android:text="Loading..."
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="italic" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fab2"
+        android:layout_alignLeft="@+id/fab2"
+        android:layout_alignStart="@+id/fab2"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:scaleType="center"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="#00ffffff"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/fbfab" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fab3"
+        android:layout_alignLeft="@+id/fab3"
+        android:layout_gravity="bottom|end"
+        android:layout_alignStart="@+id/fab3"
+        android:layout_marginBottom="31dp"
+        android:visibility="invisible"
+        android:scaleType="center"
+        app:backgroundTint="#00ffffff"
+        android:clickable="true"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_bubble_chart" />
+
+
+</RelativeLayout>

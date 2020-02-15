@@ -1,0 +1,112 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+
+
+    defaultConfig {
+        applicationId "com.svce.svcepro"
+        minSdkVersion 16
+        targetSdkVersion 26
+        multiDexEnabled true
+        versionCode 15
+        versionName "7.0.0"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-vector-drawable:26.1.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.github.PhilJay:MPAndroidChart:v2.1.0'
+    implementation 'com.github.bmarrdev:android-DecoView-charting:v1.2'
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+
+    implementation 'com.android.support:cardview-v7:26.1.0'
+
+    implementation 'com.facebook.android:facebook-android-sdk:4.+'
+
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+
+    implementation 'com.pushbots:pushbots-lib:2.0.13@aar'
+    //noinspection GradleCompatible
+    implementation 'com.google.android.gms:play-services:10.0.1'
+    implementation 'com.android.support:design:26.1.0'
+
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC1'
+    implementation 'com.roughike:bottom-bar:1.3.3'
+    implementation 'com.android.volley:volley:1.0.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
+    implementation 'com.android.support:palette-v7:26.1.0'
+
+    implementation 'com.google.firebase:firebase-core:10.0.1'
+    implementation 'com.google.firebase:firebase-database:10.0.1'
+    implementation 'com.google.firebase:firebase-auth:10.0.1'
+    implementation 'com.google.firebase:firebase-messaging:10.0.1'
+    implementation 'com.google.firebase:firebase-storage:10.0.1'
+    implementation 'com.google.firebase:firebase-crash:10.0.1'
+    implementation 'com.google.firebase:firebase-auth:10.0.1'
+    implementation 'com.google.firebase:firebase-messaging:10.0.1'
+    implementation 'com.firebaseui:firebase-ui-database:0.4.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'org.jsoup:jsoup:1.8.1'
+
+    implementation('ai.api:libai:1.4.8') {
+        exclude module: 'log4j-core'
+    }
+    implementation 'ai.api:sdk:2.0.5@aar'
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'commons-io:commons-io:2.4'
+    implementation 'co.intentservice.android-chat-ui:chat-ui:0.1.1'
+
+    implementation 'com.squareup.okhttp:okhttp:2.7.2'
+    implementation 'com.squareup.okhttp:okhttp-urlconnection:2.7.2'
+    implementation 'com.squareup.retrofit:retrofit:1.9.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'at.blogc:expandabletextview:1.0.5'
+    implementation 'com.android.support:multidex:1.0.0'
+    implementation 'com.google.firebase:firebase-ads:9.0.2'
+    testImplementation 'junit:junit:4.12'
+    implementation files('libs/activation.jar')
+    implementation files('libs/additionnal.jar')
+    implementation files('libs/mail.jar')
+    implementation 'com.android.support:design:26.1.0'
+
+}
+apply plugin: 'com.google.gms.google-services'
+// ADD THIS AT THE BOTTOM
+

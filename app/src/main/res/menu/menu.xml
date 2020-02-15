@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="harish.tabs.MainActivity">
+
+
+
+    <item
+        android:id="@+id/About"
+        android:orderInCategory="100"
+        android:title="About">
+</item>
+    <item
+        android:id="@+id/License"
+        android:orderInCategory="100"
+        android:title="Licenses"
+        >
+    </item>
+
+</menu>
